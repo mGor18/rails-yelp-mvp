@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'restaurants/index'
-  get 'restaurants/new'
-  get 'restaurants/create'
-  get 'restaurants/show'
-    resources :restaurants, :reviews
+  resources :restaurants do
+    #resources :reviews do
+    #end
+  end
 end
+
+
+# localhost:3000/restaurant/10/reviews/2
